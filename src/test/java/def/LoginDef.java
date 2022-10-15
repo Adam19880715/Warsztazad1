@@ -1,27 +1,37 @@
-package test.def;
+package def;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import test.pages.MainPage;
+import org.openqa.selenium.support.PageFactory;
+import pages.LoginPage;
+import pages.MainPage;
+
+import static def.BrowserHooks.driver;
 
 public class LoginDef {
 
-    private MainPage mainPage;
+    private final MainPage mainPage;
+    private final LoginPage loginPage;
 
-
-//    public LoginDef(MainPage mainPage) {
-//        this.mainPage = mainPage;
-//    }
-
-    @Given("User is logged")
-    public void user_is_logged() {
-        mainPage.openLogInForm();
-
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    public LoginDef() {
+        this.mainPage = PageFactory.initElements(driver, MainPage.class);
+        this.loginPage = PageFactory.initElements(driver, LoginPage.class);
     }
 
 
+    @Given("User opened correct url")
+    public void userOpenedCorrectUrl() {
+        mainPage.checkIfUrlIsCorrect();
+    }
+
+    @And("User is logged")
+    public void userLogInToApp() {
+        mainPage.openLogInForm();
+
+        loginPage.enterUsername();
+        loginPage.enterPassword();
+        loginPage.clickLoginButton();
+
+        loginPage.checkIfUserIsLogged();
+    }
 }

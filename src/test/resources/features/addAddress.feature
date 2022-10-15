@@ -1,7 +1,9 @@
 Feature: Create Address
 
   Background:
-    Given User opens correct url
+    Given User opened correct url
+    And User is logged
+gi
 
   Scenario Outline: Fill address
     When User opens address form
@@ -12,6 +14,7 @@ Feature: Create Address
     Examples:
       | alias | address     | postalCode | city     | country        | phoneNumber |
       | Adam  | Gadzinowski | 01-001     | Warszawa | United Kingdom | 123456789   |
+
 
 
   Scenario Outline: Fill address and remove it
