@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cc5c28a-124f-41b1-872a-381bfc37641a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/def/LoginDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/LoginDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/def/AddressDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/AddressDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/def/BrowserHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/BrowserHooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/def/CartDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/def/CartDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/addAddress.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/addAddress.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

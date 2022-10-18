@@ -13,15 +13,13 @@ import java.util.concurrent.TimeUnit;
 public class BrowserHooks {
 
     public static WebDriver driver;
-
-
     @BeforeAll
     public static void setUpDriver() {
         WebDriverManager.chromedriver().setup();
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
     }
 
     @Before

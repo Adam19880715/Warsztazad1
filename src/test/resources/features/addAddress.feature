@@ -3,7 +3,7 @@ Feature: Create Address
   Background:
     Given User opened correct url
     And User is logged
-gi
+
 
   Scenario Outline: Fill address
     When User opens address form

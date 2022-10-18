@@ -1,6 +1,7 @@
 package def;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.support.PageFactory;
 import pages.CartPage;
@@ -58,4 +59,7 @@ public class CartDef {
     public void userMakesScreenshot() {
         ScreenShots.makeScreenShot();
     }
+
+
+
 }
